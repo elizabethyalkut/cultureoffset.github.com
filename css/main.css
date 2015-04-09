@@ -14,7 +14,7 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
+  font: 14px Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif;;
   font-size: small;
   text-align: center;
 }
@@ -161,4 +161,54 @@ a:visited { color: #a0a; }
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+/* Custom */
+body {
+    background-color: #77AB59;
+}
+a,
+.entry-content p>a,
+.entry-content li>a {
+    border-bottom: solid 1px #77AB59;
+}
+a:hover,
+a:focus {
+    color: #77AB59;
+}
+h1 {
+    font-variant: small-caps;
+    color: #77AB59;
+    font-family: "Hoefler Text", "Cambria", Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+
+}
+.header-title h1 {
+    color: white;
+    text-shadow: 1px 1px 0px #000000, 2px 2px 2px #fff, 3px 3px 3px #000;
+
+}
+h1 + p:first-letter {
+    font-family: "Hoefler Text", "Cambria", Georgia, "Times New Roman", Times, serif;
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 0.7;
+    color: #77AB59;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+p + ul {
+        -moz-column-count: 3;
+        -moz-column-gap: 30px;
+        -webkit-column-count: 3;
+        -webkit-column-gap: 30px;
+    column-count: 3;
+    column-gap: 30px;
+}
+.footer-wrapper a:hover,
+.footer-wrapper a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
 }
